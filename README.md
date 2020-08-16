@@ -23,8 +23,8 @@ Start Station (e.g., Broadway & Barry Ave)
 End Station (e.g., Sedgwick St & North Ave)
 User Type (Subscriber or Customer)
 
-_The Chicago and New York City files also have the following two columns:_
-Gender
+_The Chicago and New York City files also have the following two columns:_\
+Gender\
 Birth Year
 
 **In this project, code is written to compute the following statistics about the data:**
