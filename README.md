@@ -46,8 +46,8 @@ average travel time
 4. User info:
 counts of each user type
 
-only available for NYC and Chicago:
-counts of each gender 
+Stats available only for NYC and Chicago:
+counts of each gender
 earliest, most recent, most common year of birth
 
 Libraries Used:
@@ -55,10 +55,9 @@ Libraries Used:
 2. pandas
 3. numpy
 
-Credits
+Credits:
 1. Python documentation
 2. Pandas documentation
 3. Lectures of Programming for Data Science
 4. Starter code, instructions and clean datasets were provided by Udacity as a part of Nanodegree program.
 5. Stack Overflow
-
