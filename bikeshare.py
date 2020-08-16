@@ -120,7 +120,7 @@ def load_data(city):
 
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
-    df['day_of_week'] = df['Start Time'].dt.weekday_name
+    df['day_of_week'] = df['Start Time'].dt.day_name()
 
     return df
 
@@ -142,15 +142,6 @@ def get_filters(df, month, day):
          df = df[df['day_of_week'] == day.title()]
 
     return df
-
-def display_data(df):
-    '''Displays raw and filtered data bsaed on the argument.
-    INPUT:
-        df - dataframe returned from get_filters()
-    OUTPUT:
-        none.
-    '''
-    print('***Bike Share Data***\n',df)
 
 def most_popular_month(df):
     '''Which is the most popular month?
@@ -295,6 +286,14 @@ def compute_time(fun, df):
     print(functionToCompute)
     print("\n\nComputing this function took %s seconds." % (time.time() - start_time))
 
+def display_data(df):
+    '''Displays raw and filtered data bsaed on the argument.
+    INPUT:
+        df - dataframe returned from get_filters()
+    OUTPUT:
+        none.
+    '''
+    print('***Bike Share Data***\n',df)
 
 def main_stats():
     '''Calculates the statitics about the city based on the user input.
@@ -306,11 +305,9 @@ def main_stats():
     city = get_city()
 
     df = load_data(city)
-    display_data(df)
 
     month = get_month()
     day = get_day()
-    display_data(df)
 
     df = get_filters(df, month, day)
 
@@ -321,6 +318,11 @@ def main_stats():
     for fun in sfunction_list:
         print('function execution:', fun)
         compute_time(fun, df)
+
+    display = input("\n * Would you like to display the filtered data? Type \'yes\' or \'no\'.\n")
+    if display.upper() == 'YES' or display.upper() == "Y":
+        display_data(df)
+
     # Restart?
     restart = input("\n * Would you like to restart and perform another analysis? Type \'yes\' or \'no\'.\n")
     if restart.upper() == 'YES' or restart.upper() == "Y":
