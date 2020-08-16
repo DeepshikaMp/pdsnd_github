@@ -1,13 +1,13 @@
-**Date created:**
+**Date created:**\
 August 2020
 
-Project Title:
+**Project Title:**\
 Explore Bikeshare Data
 
-Description:
+**Description:**\
 In this project, Python is used to explore and provide statistics of data from bike share systems for three major cities in the United States - New York City, Chicago, and Washington. Data was imported from the csv files which provides details about the bike usage and the project provides stats based on the filters applied.
 
-Project Data:
+**Project Data:**\
 chicago.csv - Dataset containing all bikeshare information for the city of Chicago. Data file provided by Udacity.
 
 new_york_city.csv - Dataset containing all bikeshare information for the city of New York. Data file provided by Udacity.
@@ -15,7 +15,7 @@ new_york_city.csv - Dataset containing all bikeshare information for the city of
 washington.csv - Dataset containing all bikeshare information for the city of Washington. Data file provided by Udacity.
 Note: This dataset does not contain data about 'Gender' or 'Birth Year'.
 
-Data Fields:
+**Data Fields:**\
 Start Time (e.g., 2017-01-01 00:07:57)
 End Time (e.g., 2017-01-01 00:20:53)
 Trip Duration (in seconds - e.g., 776)
@@ -23,39 +23,38 @@ Start Station (e.g., Broadway & Barry Ave)
 End Station (e.g., Sedgwick St & North Ave)
 User Type (Subscriber or Customer)
 
-The Chicago and New York City files also have the following two columns:
+_The Chicago and New York City files also have the following two columns:_
 Gender
 Birth Year
 
+**In this project, code is written to compute the following statistics about the data:**
 
-In this project, code is written to compute the following statistics about the data:
-
-1. Popular times of travel:
+**_1. Popular times of travel:_**\
 most common month
 most common day of week
 most common hour of day
 
-2. Popular stations and trip:
+**_2. Popular stations and trip:_**\
 most common start station
 most common end station
 
-3. Trip duration:
+**_3. Trip duration:_**\
 total travel time
 average travel time
 
-4. User info:
+**_4. User info:_**\
 counts of each user type
 
-Stats available only for NYC and Chicago:
+_Stats available only for NYC and Chicago:_\
 counts of each gender
 earliest, most recent, most common year of birth
 
-Libraries Used:
+**_Libraries Used:_**\
 1. time
 2. pandas
 3. numpy
 
-Credits:
+**_Credits:_**\
 1. Python documentation
 2. Pandas documentation
 3. Lectures of Programming for Data Science
