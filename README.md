@@ -49,12 +49,12 @@ _Stats available only for NYC and Chicago:_\
 counts of each gender
 earliest, most recent, most common year of birth
 
-**_Libraries Used:_**\
+**Libraries Used:**
 1. time
 2. pandas
 3. numpy
 
-**_Credits:_**\
+**Credits:**
 1. Python documentation
 2. Pandas documentation
 3. Lectures of Programming for Data Science
