@@ -324,7 +324,7 @@ def main_stats():
     if display.upper() == 'YES' or display.upper() == "Y":
         display_data(df)
 
-    # Restart?
+    #Restart the process
     restart = input("\n * Would you like to restart and perform another analysis? Type \'yes\' or \'no\'.\n")
     if restart.upper() == 'YES' or restart.upper() == "Y":
         main_stats()
