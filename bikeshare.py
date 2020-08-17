@@ -319,6 +319,7 @@ def main_stats():
         print('function execution:', fun)
         compute_time(fun, df)
 
+    #Display filtered data
     display = input("\n * Would you like to display the filtered data? Type \'yes\' or \'no\'.\n")
     if display.upper() == 'YES' or display.upper() == "Y":
         display_data(df)
